@@ -179,9 +179,30 @@
     <Compile Include="Migrations\202411181243221_Initial.Designer.cs">
       <DependentUpon>202411181243221_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202411251122207_AddMembershipType.cs" />
+    <Compile Include="Migrations\202411251122207_AddMembershipType.Designer.cs">
+      <DependentUpon>202411251122207_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411251141150_UpdateCustomer.cs" />
+    <Compile Include="Migrations\202411251141150_UpdateCustomer.Designer.cs">
+      <DependentUpon>202411251141150_UpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411251148297_MembershipTypeName.cs" />
+    <Compile Include="Migrations\202411251148297_MembershipTypeName.Designer.cs">
+      <DependentUpon>202411251148297_MembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411251149152_PopulateName.cs" />
+    <Compile Include="Migrations\202411251149152_PopulateName.Designer.cs">
+      <DependentUpon>202411251149152_PopulateName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411251219260_Movies.cs" />
+    <Compile Include="Migrations\202411251219260_Movies.Designer.cs">
+      <DependentUpon>202411251219260_Movies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -252,6 +273,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -272,6 +294,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202411181243221_Initial.resx">
       <DependentUpon>202411181243221_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411251122207_AddMembershipType.resx">
+      <DependentUpon>202411251122207_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411251141150_UpdateCustomer.resx">
+      <DependentUpon>202411251141150_UpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411251148297_MembershipTypeName.resx">
+      <DependentUpon>202411251148297_MembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411251149152_PopulateName.resx">
+      <DependentUpon>202411251149152_PopulateName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411251219260_Movies.resx">
+      <DependentUpon>202411251219260_Movies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

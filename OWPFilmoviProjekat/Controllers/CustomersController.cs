@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
+using OWPFilmoviProjekat.ViewModels;
 
 namespace OWPFilmoviProjekat.Controllers
 {
@@ -21,6 +22,18 @@ namespace OWPFilmoviProjekat.Controllers
         {
             _context.Dispose();
         }
+
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewModel = new newCustomerViewModel
+            {
+                MembershipTypes = membershipTypes
+            };
+
+            return View(viewModel);
+        }
+
         // GET: Customers
         public ActionResult Index()
         {
